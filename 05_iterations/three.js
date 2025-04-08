@@ -1,4 +1,4 @@
-// for of
+// for of and for each loops are suitable for iterating on arrays
 
 // ["","",""]
 // [{},{},{}]
@@ -36,4 +36,4 @@ const myObject = {
 
 // for (const [key , value] of myObject) {
 //     console.log(key, ':-', value);
-// } => will not work for objects as objects as non- iterable
+// } => will not work for objects as objects are non- iterable
