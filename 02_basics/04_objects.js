@@ -44,10 +44,13 @@ const users= [
  users[1].email
 
 //  console.log(tinderUser);
-//  console.log(Object.keys(tinderUser));
-//  console.log(Object.values(tinderUser));
-//  console.log(Object.entries(tinderUser));
-//  console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+//  console.log(Object.keys(tinderUser));//This method returns an array of key from the object.
+
+//  console.log(Object.values(tinderUser));//This method returns an array of value from the object.
+
+// console.log(Object.entries(tinderUser));//This method returns an array of key-value pairs from the object.
+
+//  console.log(tinderUser.hasOwnProperty('isLoggedIn'));// This checks if the object itself has a specific property.
  
  const course ={
     coursename: "js in hindi",
