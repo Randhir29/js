@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randhir DOM</title>
+</head>
+<body style="background-color: #4e5766; color:#fff;">
+ 
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className='main'
+    div.id=Math.round(Math.random()*10+1)
+    div.setAttribute("title","generated title")
+    div.style.backgroundColor='green'
+    div.style.padding = '12px'
+    // div.innerText="Chai Aur Code"
+    const addText= document.createTextNode("Chai Aur Code")
+    div.appendChild(addText)
+    document.body.appendChild(div)
+    
+    
+    const arr2 = ['blue', 'green', 'yellow', 'red', 'purple', 'grey', 'violet', 'orange']
+
+    function getRandomColor(color) {
+        return color[Math.floor(Math.random() * color.length+ 1)];
+    }
+    
+    let arr1 = ['Ram','Sita','Hanuman','Shiva','Mahakali']
+
+    arr1.forEach((text) => {
+    const randomColor = getRandomColor(arr2);
+    multipleButtons(text, randomColor);
+    });
+
+
+    function multipleButtons(text, bgColor) {
+        const button = document.createElement('button')
+        console.log(button)
+        button.setAttribute('className', 'firstbutton')
+        button.setAttribute('type', 'submit')
+        button.style.backgroundColor = `${bgColor}`
+        button.style.cursor = 'pointer'
+        button.style.padding = "12px"
+        button.style.borderRadius = "10px"
+        const textnode = document.createTextNode(`${text}`)
+        button.appendChild(textnode)
+        document.body.appendChild(button)
+    }
+
+    
+    
+    const colors= [ "red" , "green" , "blue" , "purple" , "orange" , "pink"]
+
+
+    const texts= [ "red" , "green" , "blue" , "purple" , "orange" , "pink"]
+
+    function colorchange(colorss , textss){    
+    const div = document.createElement('div')
+    div.className = "divone"
+    div.id="o"
+    const text = document.createTextNode(textss)
+    div.appendChild(text)
+    div.style.color = colorss
+    document.body.appendChild(div)
+}
+
+for (let i = 0; i < colors.length; i++) {
+    colorchange(colors[i] , texts[i])
+    
+}
+
+// colors.forEach(colorchange)
+
+</script>
+</html>
