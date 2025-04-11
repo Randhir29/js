@@ -20,13 +20,13 @@ html {
     padding: 7px;
   }
   
-  button {
+  .button {
     background-color: #141414;
     color: #fff;
     width: 250px;
     height: 50px;
     border-radius: 25px;
-    font-size: 30px;
+    font-size: 15px;
     border-style: none;
     margin-top: 30px;
     /* margin-left: 50px; */
