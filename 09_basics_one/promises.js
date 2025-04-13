@@ -101,6 +101,10 @@ async function consumepromiseFive(){
 consumepromiseFive()
 
 // Introducing fetch() now:
+//fetch() is a global function which starts the process of fetching a resource from the network, returning a promise
+// A fetch() promise only rejects when a network error is encountered (which is usually when there's a permission issue or similar). A fetch() promise doesnot reject on Http errors (404, etc.).Instead a then() handler must check the Response.ok and/or Response.status properties.
+// Resources to read: https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch
+//https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 
 // async function getAllUsers() {
 //    try {
